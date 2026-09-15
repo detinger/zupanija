@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  /* Boje izvučene iz službenog grba i web stranice Istarske županije (istra-istria.hr) */
+  --color-iz-blue-50: #e6f6fd;
+  --color-iz-blue-100: #c2eafb;
+  --color-iz-blue-200: #8fd8f7;
+  --color-iz-blue-300: #52c2f0;
+  --color-iz-blue-400: #1ea9e2;
+  --color-iz-blue-500: #0094d3;
+  --color-iz-blue-600: #0077ac;
+  --color-iz-blue-700: #075c85;
+  --color-iz-blue-800: #0a4664;
+  --color-iz-blue-900: #0b3550;
+  --color-iz-blue-950: #072335;
+
+  --color-iz-green-50: #e6f7ec;
+  --color-iz-green-100: #bfeacd;
+  --color-iz-green-200: #8dd9a8;
+  --color-iz-green-300: #4dc57c;
+  --color-iz-green-400: #1cb15c;
+  --color-iz-green-500: #009a37;
+  --color-iz-green-600: #00832f;
+  --color-iz-green-700: #086b2a;
+  --color-iz-green-800: #0c5323;
+  --color-iz-green-900: #0b3f1c;
+
+  --color-iz-gold-400: #fce873;
+  --color-iz-gold-500: #fbe120;
+  --color-iz-gold-600: #e0c400;
+
+  --color-iz-red-500: #ea1d29;
+
+  --font-sans: "Source Sans 3", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Source Sans 3", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  body {
+    @apply bg-white text-slate-800 antialiased;
+    font-feature-settings: "tnum" 1;
+  }
+  ::selection {
+    @apply bg-iz-green-500/30;
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

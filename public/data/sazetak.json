@@ -1,0 +1,234 @@
+[
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "OPIS",
+  "izvrsenje2024": "IZVRŠENJE 2024",
+  "izvorniPlan2025": "IZVORNI PLAN 2025",
+  "tekuciPlan2025": "TEKUĆI PLAN 2025",
+  "izvrsenje2025": "IZVRŠENJE 2025",
+  "indeks41": "% \nIZVR. (4/1)",
+  "indeks42": "%\nIZVR. (4/2)"
+ },
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "0",
+  "izvrsenje2024": 4.0,
+  "izvorniPlan2025": "2",
+  "tekuciPlan2025": "3",
+  "izvrsenje2025": 4.0,
+  "indeks41": 5.0,
+  "indeks42": 6.0
+ },
+ {
+  "kind": "section",
+  "label": "A. RAČUN PRIHODA I RASHODA"
+ },
+ {
+  "kind": "row",
+  "konto": "6",
+  "opis": "PRIHODI POSLOVANJA",
+  "izvrsenje2024": 204848394.39,
+  "izvorniPlan2025": 249308324.97,
+  "tekuciPlan2025": 249308324.97,
+  "izvrsenje2025": 220086466.96,
+  "indeks41": 107.44,
+  "indeks42": 88.28
+ },
+ {
+  "kind": "row",
+  "konto": "7",
+  "opis": "PRIHODI OD PRODAJE NEFINANCIJSKE IMOVINE",
+  "izvrsenje2024": 120514.01,
+  "izvorniPlan2025": 415664.81,
+  "tekuciPlan2025": 415664.81,
+  "izvrsenje2025": 391913.88,
+  "indeks41": 325.2,
+  "indeks42": 94.29
+ },
+ {
+  "kind": "row",
+  "konto": "3",
+  "opis": "RASHODI POSLOVANJA",
+  "izvrsenje2024": 178162561.69,
+  "izvorniPlan2025": 221893974.94,
+  "tekuciPlan2025": 221959235.17,
+  "izvrsenje2025": 204463469.76,
+  "indeks41": 114.76,
+  "indeks42": 92.12
+ },
+ {
+  "kind": "row",
+  "konto": "4",
+  "opis": "RASHODI ZA NABAVU NEFINANCIJSKE IMOVINE",
+  "izvrsenje2024": 17249932.33,
+  "izvorniPlan2025": 72756435.54,
+  "tekuciPlan2025": 72691175.31,
+  "izvrsenje2025": 25115752.6,
+  "indeks41": 145.6,
+  "indeks42": 34.55
+ },
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "Razlika",
+  "izvrsenje2024": 9556414.38,
+  "izvorniPlan2025": -44926420.7,
+  "tekuciPlan2025": -44926420.7,
+  "izvrsenje2025": -9100841.52,
+  "indeks41": null,
+  "indeks42": null
+ },
+ {
+  "kind": "section",
+  "label": "B. RAČUN FINANCIRANJA"
+ },
+ {
+  "kind": "row",
+  "konto": "8",
+  "opis": "PRIMICI OD FINANCIJSKE IMOVINE I ZADUŽIVANJA",
+  "izvrsenje2024": 7437821.42,
+  "izvorniPlan2025": 21592204.47,
+  "tekuciPlan2025": 21592204.47,
+  "izvrsenje2025": 8413881.16,
+  "indeks41": 113.12,
+  "indeks42": 38.97
+ },
+ {
+  "kind": "row",
+  "konto": "5",
+  "opis": "IZDACI ZA FINANCIJSKU IMOVINU I OTPLATE ZAJMOVA",
+  "izvrsenje2024": 5490109.83,
+  "izvorniPlan2025": 5549589.52,
+  "tekuciPlan2025": 5549589.52,
+  "izvrsenje2025": 4660998.41,
+  "indeks41": 84.9,
+  "indeks42": 83.99
+ },
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "Neto financiranje",
+  "izvrsenje2024": 1947711.59,
+  "izvorniPlan2025": 16042614.95,
+  "tekuciPlan2025": 16042614.95,
+  "izvrsenje2025": 3752882.75,
+  "indeks41": null,
+  "indeks42": null
+ },
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "Višak/manjak iz predhodnih godina",
+  "izvrsenje2024": 15557953.92,
+  "izvorniPlan2025": 28883805.75,
+  "tekuciPlan2025": 28883805.75,
+  "izvrsenje2025": 29442587.86,
+  "indeks41": null,
+  "indeks42": null
+ },
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "UKUPAN VIŠAK/MANJAK",
+  "izvrsenje2024": 27062079.89,
+  "izvorniPlan2025": 0.0,
+  "tekuciPlan2025": 0.0,
+  "izvrsenje2025": 24094629.09,
+  "indeks41": null,
+  "indeks42": null
+ },
+ {
+  "kind": "section",
+  "label": "REKAPITULACIJA"
+ },
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "Ukupni prihodi",
+  "izvrsenje2024": 204968908.4,
+  "izvorniPlan2025": 249723989.78,
+  "tekuciPlan2025": 249723989.78,
+  "izvrsenje2025": 220478380.84,
+  "indeks41": 107.57,
+  "indeks42": 88.29
+ },
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "Višak/manjak iz prethodnih godina",
+  "izvrsenje2024": 15557953.92,
+  "izvorniPlan2025": 28883805.75,
+  "tekuciPlan2025": 28883805.75,
+  "izvrsenje2025": 29442587.86,
+  "indeks41": 189.24,
+  "indeks42": 101.93
+ },
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "Primici od financijske imovine i zaduživanja",
+  "izvrsenje2024": 7437821.42,
+  "izvorniPlan2025": 21592204.47,
+  "tekuciPlan2025": 21592204.47,
+  "izvrsenje2025": 8413881.16,
+  "indeks41": 113.12,
+  "indeks42": 38.97
+ },
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "Ukupno raspoloživa sredstva",
+  "izvrsenje2024": 227964683.74,
+  "izvorniPlan2025": 300200000.0,
+  "tekuciPlan2025": 300200000.0,
+  "izvrsenje2025": 258334849.86,
+  "indeks41": 113.32,
+  "indeks42": 86.05
+ },
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "Ukupni rashodi",
+  "izvrsenje2024": 195412494.02,
+  "izvorniPlan2025": 294650410.48,
+  "tekuciPlan2025": 294650410.48,
+  "izvrsenje2025": 229579222.36,
+  "indeks41": 117.48,
+  "indeks42": 77.92
+ },
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "Izdaci za financijsku imovinu i otplatu zajmova",
+  "izvrsenje2024": 5490109.83,
+  "izvorniPlan2025": 5549589.52,
+  "tekuciPlan2025": 5549589.52,
+  "izvrsenje2025": 4660998.41,
+  "indeks41": 84.9,
+  "indeks42": 83.99
+ },
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "Ukupno raspoređena sredstva",
+  "izvrsenje2024": 200902603.85,
+  "izvorniPlan2025": 300200000.0,
+  "tekuciPlan2025": 300200000.0,
+  "izvrsenje2025": 234240220.77,
+  "indeks41": 116.59,
+  "indeks42": 78.03
+ },
+ {
+  "kind": "row",
+  "konto": null,
+  "opis": "UKUPAN VIŠAK/MANJAK",
+  "izvrsenje2024": 27062079.89,
+  "izvorniPlan2025": 0.0,
+  "tekuciPlan2025": 0.0,
+  "izvrsenje2025": 24094629.09,
+  "indeks41": null,
+  "indeks42": null
+ }
+]

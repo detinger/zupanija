@@ -1,0 +1,362 @@
+[
+ {
+  "tip": "Razdjel",
+  "kod": "001",
+  "opis": "STRUČNA SLUŽBA SKUPŠTINE",
+  "izvorniPlan2025": 2095110.0,
+  "tekuciPlan2025": 2095110.0,
+  "izvrsenje2025": 1935229.5,
+  "indeks": 92.37
+ },
+ {
+  "tip": "Glava",
+  "kod": "00101",
+  "opis": "STRUČNA SLUŽBA ZA POSLOVE SKUPŠTINE",
+  "izvorniPlan2025": 2095110.0,
+  "tekuciPlan2025": 2095110.0,
+  "izvrsenje2025": 1935229.5,
+  "indeks": 92.37
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "002",
+  "opis": "UPRAVNI ODJEL ZA PROSTORNO UREĐENJE I GRADNJU",
+  "izvorniPlan2025": 8273199.0,
+  "tekuciPlan2025": 8255072.92,
+  "izvrsenje2025": 5025645.26,
+  "indeks": 60.88
+ },
+ {
+  "tip": "Glava",
+  "kod": "00201",
+  "opis": "UPRAVNI ODJEL ZA PROSTORNO UREĐENJE I GRADNJU",
+  "izvorniPlan2025": 8273199.0,
+  "tekuciPlan2025": 8255072.92,
+  "izvrsenje2025": 5025645.26,
+  "indeks": 60.88
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "003",
+  "opis": "UPRAVNI ODJEL ZA PRORAČUN I FINANCIJE",
+  "izvorniPlan2025": 3832391.01,
+  "tekuciPlan2025": 3832391.01,
+  "izvrsenje2025": 3024057.96,
+  "indeks": 78.91
+ },
+ {
+  "tip": "Glava",
+  "kod": "00301",
+  "opis": "UPRAVNI ODJEL ZA PRORAČUN I FINANCIJE",
+  "izvorniPlan2025": 3832391.01,
+  "tekuciPlan2025": 3832391.01,
+  "izvrsenje2025": 3024057.96,
+  "indeks": 78.91
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "004",
+  "opis": "UPRAVNI ODJEL ZA ODRŽIVI RAZVOJ",
+  "izvorniPlan2025": 10850250.96,
+  "tekuciPlan2025": 10850250.96,
+  "izvrsenje2025": 6047756.05,
+  "indeks": 55.74
+ },
+ {
+  "tip": "Glava",
+  "kod": "00401",
+  "opis": "UPRAVNI ODJEL ZA ODRŽIVI RAZVOJ",
+  "izvorniPlan2025": 8729413.85,
+  "tekuciPlan2025": 8729413.85,
+  "izvrsenje2025": 4735012.82,
+  "indeks": 54.24
+ },
+ {
+  "tip": "Glava",
+  "kod": "00402",
+  "opis": "JAVNA USTANOVA \"NATURA HISTRICA\"",
+  "izvorniPlan2025": 1596265.0,
+  "tekuciPlan2025": 1596265.0,
+  "izvrsenje2025": 857934.19,
+  "indeks": 53.75
+ },
+ {
+  "tip": "Glava",
+  "kod": "00403",
+  "opis": "ZAVOD ZA PROSTORNO UREĐENJE ISTARSKE ŽUPANIJE",
+  "izvorniPlan2025": 524572.11,
+  "tekuciPlan2025": 524572.11,
+  "izvrsenje2025": 454809.04,
+  "indeks": 86.7
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "005",
+  "opis": "UPRAVNI ODJEL ZA TURIZAM",
+  "izvorniPlan2025": 1683972.56,
+  "tekuciPlan2025": 1683972.56,
+  "izvrsenje2025": 1442278.21,
+  "indeks": 85.65
+ },
+ {
+  "tip": "Glava",
+  "kod": "00501",
+  "opis": "UPRAVNI ODJEL ZA TURIZAM",
+  "izvorniPlan2025": 1683972.56,
+  "tekuciPlan2025": 1683972.56,
+  "izvrsenje2025": 1442278.21,
+  "indeks": 85.65
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "006",
+  "opis": "UPRAVNI ODJEL ZA KULTURU I ZAVIČAJNOST",
+  "izvorniPlan2025": 6010503.71,
+  "tekuciPlan2025": 6010503.71,
+  "izvrsenje2025": 4794520.39,
+  "indeks": 79.77
+ },
+ {
+  "tip": "Glava",
+  "kod": "00601",
+  "opis": "UPRAVNI ODJEL ZA KULTURU I ZAVIČAJNOST",
+  "izvorniPlan2025": 2570878.77,
+  "tekuciPlan2025": 2570878.77,
+  "izvrsenje2025": 2170765.23,
+  "indeks": 84.44
+ },
+ {
+  "tip": "Glava",
+  "kod": "00602",
+  "opis": "USTANOVE U KULTURI",
+  "izvorniPlan2025": 3439624.94,
+  "tekuciPlan2025": 3439624.94,
+  "izvrsenje2025": 2623755.16,
+  "indeks": 76.28
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "007",
+  "opis": "UPRAVNI ODJEL ZA POLJOPRIVREDU,ŠUM.LOV.RIBARSTVO I VODNO GOSPODARSTVO",
+  "izvorniPlan2025": 16827463.25,
+  "tekuciPlan2025": 16860206.99,
+  "izvrsenje2025": 5792058.25,
+  "indeks": 34.35
+ },
+ {
+  "tip": "Glava",
+  "kod": "00701",
+  "opis": "UPRAVNI ODJEL ZA POLJOPRIVREDU,ŠUMARSTVO,LOV,RIBAR.I VODNO GOSPODARSTV",
+  "izvorniPlan2025": 16649589.99,
+  "tekuciPlan2025": 16682333.73,
+  "izvrsenje2025": 5738815.21,
+  "indeks": 34.4
+ },
+ {
+  "tip": "Glava",
+  "kod": "00702",
+  "opis": "CENTAR ZA RAZVOJ RIBARSTVA I AKVAKULTURE ISTARSKE ŽUPANIJE",
+  "izvorniPlan2025": 177873.26,
+  "tekuciPlan2025": 177873.26,
+  "izvrsenje2025": 53243.04,
+  "indeks": 29.93
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "008",
+  "opis": "UPRAVNI ODJEL ZA ZDRAVSTVO I SOCIJALNU SKRB",
+  "izvorniPlan2025": 101120155.25,
+  "tekuciPlan2025": 101120155.25,
+  "izvrsenje2025": 93365859.9,
+  "indeks": 92.33
+ },
+ {
+  "tip": "Glava",
+  "kod": "00801",
+  "opis": "UPRAVNI ODJEL ZA ZDRAVSTVO I SOCIJALNU SKRB",
+  "izvorniPlan2025": 12949061.78,
+  "tekuciPlan2025": 12949061.78,
+  "izvrsenje2025": 7056590.68,
+  "indeks": 54.49
+ },
+ {
+  "tip": "Glava",
+  "kod": "00802",
+  "opis": "USTANOVE U ZDRAVSTVU",
+  "izvorniPlan2025": 77129714.28,
+  "tekuciPlan2025": 77129714.28,
+  "izvrsenje2025": 75418366.55,
+  "indeks": 97.78
+ },
+ {
+  "tip": "Glava",
+  "kod": "00803",
+  "opis": "DOMOVI ZA STARIJE OSOBE",
+  "izvorniPlan2025": 11041379.19,
+  "tekuciPlan2025": 11041379.19,
+  "izvrsenje2025": 10890902.67,
+  "indeks": 98.64
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "009",
+  "opis": "UPRAVNI ODJEL ZA OBRAZOVANJE, SPORT I TEHNIČKU KULTURU",
+  "izvorniPlan2025": 128780975.08,
+  "tekuciPlan2025": 128765980.47,
+  "izvrsenje2025": 99976606.77,
+  "indeks": 77.64
+ },
+ {
+  "tip": "Glava",
+  "kod": "00901",
+  "opis": "UPRAVNI ODJEL ZA OBRAZOVANJE, SPORT I TEHNIČKU KULTURU",
+  "izvorniPlan2025": 39196397.22,
+  "tekuciPlan2025": 39115461.86,
+  "izvrsenje2025": 12641813.73,
+  "indeks": 32.32
+ },
+ {
+  "tip": "Glava",
+  "kod": "00902",
+  "opis": "OSNOVNOŠKOLSKE USTANOVE",
+  "izvorniPlan2025": 43183578.0,
+  "tekuciPlan2025": 43231312.53,
+  "izvrsenje2025": 41810153.66,
+  "indeks": 96.71
+ },
+ {
+  "tip": "Glava",
+  "kod": "00904",
+  "opis": "VISOKO OBRAZOVNE USTANOVE",
+  "izvorniPlan2025": 2502057.0,
+  "tekuciPlan2025": 2502057.0,
+  "izvrsenje2025": 1603276.99,
+  "indeks": 64.08
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "010",
+  "opis": "UPRAVNI ODJEL ZA TALIJANSKU NACIONALNU AUTOHTONU ZAJEDNICU, NACIONALNE MANJINE I MLADE",
+  "izvorniPlan2025": 865949.53,
+  "tekuciPlan2025": 866326.48,
+  "izvrsenje2025": 796070.79,
+  "indeks": 91.89
+ },
+ {
+  "tip": "Glava",
+  "kod": "01001",
+  "opis": "UPRAVNI ODJEL ZA TALIJANSKU NACIONALNU AUTOHTONU ZAJEDNICU, NACIONALNE MANJINE I MLADE",
+  "izvorniPlan2025": 833349.53,
+  "tekuciPlan2025": 833617.84,
+  "izvrsenje2025": 770706.79,
+  "indeks": 92.45
+ },
+ {
+  "tip": "Glava",
+  "kod": "01002",
+  "opis": "VIJEĆA I PREDSTAVNICI NACIONALNIH MANJINA",
+  "izvorniPlan2025": 32600.0,
+  "tekuciPlan2025": 32708.64,
+  "izvrsenje2025": 25364.0,
+  "indeks": 77.55
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "011",
+  "opis": "UPRAVNI ODJEL ŽUPANA",
+  "izvorniPlan2025": 8010371.26,
+  "tekuciPlan2025": 7984051.62,
+  "izvrsenje2025": 3720323.76,
+  "indeks": 46.6
+ },
+ {
+  "tip": "Glava",
+  "kod": "01101",
+  "opis": "UPRAVNI ODJEL ŽUPANA",
+  "izvorniPlan2025": 7135445.5,
+  "tekuciPlan2025": 7109125.86,
+  "izvrsenje2025": 3138503.55,
+  "indeks": 44.15
+ },
+ {
+  "tip": "Glava",
+  "kod": "01102",
+  "opis": "AURORA REGIONALNI KOORDINATOR IŽ ZA EU PROGRAME I FONDOVE",
+  "izvorniPlan2025": 874925.76,
+  "tekuciPlan2025": 874925.76,
+  "izvrsenje2025": 581820.21,
+  "indeks": 66.5
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "012",
+  "opis": "SLUŽBA ZA ZAJEDNIČKE POSLOVE",
+  "izvorniPlan2025": 5669424.5,
+  "tekuciPlan2025": 5669424.5,
+  "izvrsenje2025": 3597177.28,
+  "indeks": 63.45
+ },
+ {
+  "tip": "Glava",
+  "kod": "01201",
+  "opis": "SLUŽBA ZA ZAJEDNIČKE POSLOVE",
+  "izvorniPlan2025": 5669424.5,
+  "tekuciPlan2025": 5669424.5,
+  "izvrsenje2025": 3597177.28,
+  "indeks": 63.45
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "013",
+  "opis": "SLUŽBA ZA UNUTARNJU REVIZIJU",
+  "izvorniPlan2025": 121957.5,
+  "tekuciPlan2025": 121957.5,
+  "izvrsenje2025": 93310.08,
+  "indeks": 76.51
+ },
+ {
+  "tip": "Glava",
+  "kod": "01301",
+  "opis": "SLUŽBA ZA UNUTARNJU REVIZIJU",
+  "izvorniPlan2025": 121957.5,
+  "tekuciPlan2025": 121957.5,
+  "izvrsenje2025": 93310.08,
+  "indeks": 76.51
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "014",
+  "opis": "UPRAVNI ODJEL ZA GOSPODARSTVO",
+  "izvorniPlan2025": 3463791.68,
+  "tekuciPlan2025": 3463791.68,
+  "izvrsenje2025": 2488294.47,
+  "indeks": 71.84
+ },
+ {
+  "tip": "Glava",
+  "kod": "01401",
+  "opis": "UPRAVNI ODJEL ZA GOSPODARSTVO",
+  "izvorniPlan2025": 3463791.68,
+  "tekuciPlan2025": 3463791.68,
+  "izvrsenje2025": 2488294.47,
+  "indeks": 71.84
+ },
+ {
+  "tip": "Razdjel",
+  "kod": "016",
+  "opis": "UPRAVNI ODJEL ZA OPĆU UPRAVU I IMOVINSKO-PRAVNE POSLOVE",
+  "izvorniPlan2025": 2594484.71,
+  "tekuciPlan2025": 2620804.35,
+  "izvrsenje2025": 2141032.1,
+  "indeks": 81.69
+ },
+ {
+  "tip": "Glava",
+  "kod": "01601",
+  "opis": "UPRAVNI ODJEL ZA OPĆU UPRAVU I IMOVINSKO-PRAVNE POSLOVE",
+  "izvorniPlan2025": 2594484.71,
+  "tekuciPlan2025": 2620804.35,
+  "izvrsenje2025": 2141032.1,
+  "indeks": 81.69
+ }
+]
