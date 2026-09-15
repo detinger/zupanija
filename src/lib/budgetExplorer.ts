@@ -10,9 +10,9 @@ export const BUDGET_METRICS: { key: BudgetMetric; label: string; short: string }
 
 // Stable colours by function, independent of the ranking or selected year.
 const FUNCTION_COLOURS: Record<string, string> = {
-  "01": "#284b73", "02": "#636b7e", "03": "#924567", "04": "#9a5b20",
-  "05": "#357549", "06": "#667332", "07": "#087b78", "08": "#7358a0",
-  "09": "#1267a7", "10": "#b24459",
+  "01": "#34536e", "02": "#637584", "03": "#a44769", "04": "#a66a24",
+  "05": "#3d7e48", "06": "#74802d", "07": "#128374", "08": "#8060ad",
+  "09": "#2579b8", "10": "#c45765",
 };
 
 export function functionColour(code: string | null): string {

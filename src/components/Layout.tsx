@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { LayoutDashboard, Landmark, PieChart, Building2, GitBranch, Wallet, HardHat, Search, Download, Menu, X, ArrowUpRight } from "lucide-react";
 import { Grb } from "./Logo";
 const NAV = [
-  { to: "/", label: "Pregled proračuna", end: true, icon: LayoutDashboard },
+  { to: "/", label: "Proračun u priči", end: true, icon: LayoutDashboard },
   { to: "/rashodi", label: "Kamo odlazi novac", icon: PieChart },
   { to: "/prihodi", label: "Prihodi i rashodi", icon: Landmark },
   { to: "/organizacijska", label: "Upravna tijela", icon: Building2 },

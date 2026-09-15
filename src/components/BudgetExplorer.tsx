@@ -11,6 +11,7 @@ import {
   metricValue, ratioPercent, readBudgetMetric, sumMetric, type BudgetMetric,
 } from "../lib/budgetExplorer";
 import "./BudgetExplorer.css";
+import { AllocationChart } from "./AllocationChart";
 
 const decimal = new Intl.NumberFormat("hr-HR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const hundredEuros = new Intl.NumberFormat("hr-HR", { style: "currency", currency: "EUR" });
@@ -24,6 +25,7 @@ export function BudgetExplorer() {
   const [shareState, setShareState] = useState<"idle" | "copied" | "fallback">("idle");
   const headingId = useId();
   const detailId = useId();
+  const view = params.get("prikaz") === "karta" ? "karta" : params.get("prikaz") === "100" ? "100" : "krug";
   const metric = readBudgetMetric(params.get("mjera"));
   const functions = useMemo(() => budgetFunctions(data ?? []), [data]);
   const ranked = useMemo(() => [...functions].sort((a, b) => metricValue(b, metric) - metricValue(a, metric)), [functions, metric]);
@@ -139,17 +141,17 @@ export function BudgetExplorer() {
             {item.label}
           </button>)}
         </div>
-        <span className="be-caption">{functions.length} funkcija · iznosi u eurima</span>
+        <div className="be-view-switch" role="group" aria-label="Vrsta vizualizacije">{[{ key: "krug", label: "Krug" }, { key: "karta", label: "Karta" }, { key: "100", label: "100 €" }].map(item => <button key={item.key} aria-pressed={view === item.key} onClick={() => updateParam("prikaz", item.key)}>{item.label}</button>)}</div>
       </div>
 
       <div className="be-workspace">
         <div className="be-distribution">
           <div className="be-map-heading">
             <div><p className="be-eyebrow">Ukupni rashodi · {currentMetric.label}</p><p className="be-total" title={fmtEurExact(total)}>{fmtEurCompact(total)}</p></div>
-            <span className="be-map-hint"><Layers3 size={15} aria-hidden="true" /> Veličina polja = iznos</span>
+            <span className="be-map-hint"><Layers3 size={15} aria-hidden="true" /> {view === "krug" ? "Duljina luka = udio" : view === "karta" ? "Veličina polja = iznos" : "Jedno polje ≈ 1 €"}</span>
           </div>
 
-          <div className="be-treemap" role="group" aria-label={`Raspodjela rashoda: ${currentMetric.label}. Sve kategorije dostupne su u popisu ispod.`}>
+          {view !== "karta" ? <AllocationChart rows={ranked} metric={metric} selected={selected?.kod} onSelect={select} mode={view === "100" ? "hundred" : "ring"} /> : <div className="be-treemap" role="group" aria-label={`Raspodjela rashoda: ${currentMetric.label}. Sve kategorije dostupne su u popisu ispod.`}>
             {tiles.map((tile) => {
               const row = tile.data.row!;
               const value = metricValue(row, metric);
@@ -168,9 +170,9 @@ export function BudgetExplorer() {
               </button>;
             })}
             {total <= 0 && <p className="be-map-empty">Nema pozitivnih iznosa za odabranu mjeru.</p>}
-          </div>
+          </div>}
 
-          <p className="be-legend-hint">Odaberite polje ili naziv funkcije za detalje.</p>
+          <p className="be-legend-hint">Odaberite naziv funkcije za objašnjenje i detalje.</p>
           <div className="be-legend" role="group" aria-label="Odaberi funkciju rashoda">
             {ranked.map((row) => <button key={row.kod} className="be-legend-item" aria-pressed={selected?.kod === row.kod}
               aria-controls={detailId} onClick={() => select(row.kod)}>
@@ -187,6 +189,7 @@ export function BudgetExplorer() {
             {selected && <button className="be-reset" onClick={() => updateParam("funkcija")}><RotateCcw size={13} /> Sve funkcije</button>}
           </div>
           <h2>{title}</h2>
+          <p className="be-explainer">{selected ? `Prikaz izdvaja rashode za namjenu „${functionLabel(selected).toLocaleLowerCase("hr-HR")}”, neovisno o upravnom tijelu koje ih izvršava.` : "Svaka boja predstavlja jednu javnu namjenu. Odaberite funkciju za njezin udio, usporedbu godina i potkategorije."}</p>
           <p className="be-detail-amount" title={fmtEurExact(amount)}>{fmtEurCompact(amount)}</p>
           <p className="be-caption">{currentMetric.short}</p>
 
