@@ -6,20 +6,26 @@ odgovarajućim tekstom obrazloženja iz izvornog PDF-a.
 
 ## Pokretanje
 
+Naredbe pokrećite iz direktorija `app/` (iz korijena repozitorija prvo `cd app`).
+Koristite aktualni Node.js 22 LTS, najmanje 22.18 za TypeScript provjere.
+
 ```bash
-npm install
+npm ci
 npm run dev       # razvojni server, http://localhost:5173
 npm run build     # produkcijski build u dist/ (statični fileovi, deploy bilo gdje)
 ```
 
 ## Podatkovni pipeline
 
-Svi prikazani podaci generirani su iz tri izvorna dokumenta u `public/izvornici/`
-(preuzeti iz `1.OPĆI I POSEBNI.xlsx`, službenog PDF-a i pratećeg `.doc` obrazloženja).
+JSON podaci generiraju se iz XLSX-a i službenog PDF-a u `public/izvornici/`.
+Prateći DOC dostupan je za preuzimanje, ali ga postojeće skripte ne parsiraju.
+Kopije sva tri izvorna dokumenta nalaze se i u korijenu repozitorija.
 Generiranje se pokreće ručno, samo kad se izvorni dokumenti promijene:
 
 ```bash
-python3 -m pip install --break-system-packages openpyxl   # jednom
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install openpyxl
 python3 scripts/extract_xlsx.py       # -> public/data/{sazetak,ekonomska,...,programska}.json
 python3 scripts/extract_pdf_text.py   # -> public/data/{narrative-*,search-documents}.json
 ```
@@ -28,7 +34,7 @@ python3 scripts/extract_pdf_text.py   # -> public/data/{narrative-*,search-docum
 hijerarhiju programske klasifikacije (Razdjel → Glava → Proračunski korisnik →
 Program → Aktivnost/Projekt), ~17.500 redaka.
 
-`extract_pdf_text.py` pokreće `pdftotext -layout`/`pdftotext` nad 1.048-stranačnim
+`extract_pdf_text.py` zahtijeva instaliran Poppler (`pdftotext`) i pokreće `pdftotext` nad 1.048-stranačnim
 PDF-om, prepoznaje zaglavlja poglavlja te tekst obrazloženja povezuje s odgovarajućim
 programima/aktivnostima po točnim šiframa gdje je moguće (fallback na usporedbu
 naziva). Podudaranje je **best-effort** — dio programa/aktivnosti u izvorniku nema
@@ -53,10 +59,12 @@ vrijedi isključivo izvorni PDF dostupan na stranici „Preuzimanja”.
 
 ## Interaktivni prikazi
 
-- Naslovnica: ključni pokazatelji, raspodjela funkcija, plan i izvršenje.
-- Rashodi: karta udjela, 3 mjere, detalji potkategorija, CSV i dijeljenje pogleda.
+- Naslovnica: pet interaktivnih poglavlja (Velika slika, Svakih 100 €, Plan i ostvarenje, Ulaganja, Rezultat godine), s načinom prezentacije i odabirom u URL-u.
+- Rashodi: krug, karta udjela i mreža 100 €, 3 mjere, detalji potkategorija, CSV i dijeljenje pogleda.
 - Programi: razdjeli → glave → programi → aktivnosti, filtri, izvoz i obrazloženja.
 - Investicije: 189 kapitalnih projekata, filtri po nazivu i razdjelu te izravne poveznice.
 - Pretraga: tekst izvještaja, sačuvan upit u URL-u i poveznice na PDF.
 
-Detalji provjera: `VALIDATION.md`. Site konfiguracija nalazi se u `.openai/hosting.json`.
+Detalji provjera: [VALIDATION.md](VALIDATION.md).
+Netlify konfiguracija i upute nalaze se u [korijenu repozitorija](../README.md#netlify).
+Konfiguracija prethodnog Sites hostinga nalazi se u `.openai/hosting.json`.

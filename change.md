@@ -1,9 +1,14 @@
 # Pregled napravljenih izmjena
 
 **Projekt:** Interaktivni proračun Istarske županije za 2025. godinu  
-**Datum:** 15. rujna 2026.  
-**Aplikacija:** [Proračun Istarske županije 2025.](https://istra-proracun-2025.darko-etinger.chatgpt.site)  
-**Objava:** privatna demonstracijska verzija, verzija 2 (prezentacijski redizajn)
+**Ažurirano:** 16. rujna 2026.
+**Prethodna Sites objava:** [Proračun Istarske županije 2025.](https://istra-proracun-2025.darko-etinger.chatgpt.site)
+**Repozitorij:** [detinger/zupanija](https://github.com/detinger/zupanija)
+**Netlify:** konfiguracija poslana na GitHub; rezultat ponovne objave i live URL još nisu potvrđeni.
+
+Odjeljci 1–11 opisuju početnu doradu; odjeljak 12 naknadni prezentacijski
+redizajn koji zamjenjuje raniji opis naslovnice i proširuje prikaze rashoda.
+Aktualna struktura repozitorija i Netlify konfiguracija opisane su u odjeljku 13.
 
 ## 1. Sažetak
 
@@ -178,7 +183,7 @@ Pregled programa prerađen je u postupno otvaranje hijerarhije:
 - Potvrđen je ukupan iznos izvršenih rashoda: **229.579.222,36 €**.
 - Provjereno je svih **1.601 jedinstvenih poveznica** na aktivnosti i projekte.
 
-### Preglednik
+### Preglednik — prije prezentacijskog redizajna
 
 Lokalna aplikacija provjerena je u Chromiumu na širinama **1440 px i 390 px**.
 
@@ -208,9 +213,9 @@ node scripts/check-program-tree.ts
 **Datoteke provjera:** [check-budget-explorer.ts](app/scripts/check-budget-explorer.ts),
 [check-program-tree.ts](app/scripts/check-program-tree.ts), [VALIDATION.md](app/VALIDATION.md).
 
-## 10. Objava
+## 10. Početna Sites objava — povijesni zapis
 
-- Inicijaliziran je Git repozitorij unutar direktorija `app`.
+- Git repozitorij prvotno je inicijaliziran u `app`; 16. rujna premješten je u korijen `zupanija` (odjeljak 13).
 - Spremljena je provjerena verzija izvornog koda i poslana u privatni Sites repozitorij.
 - Dodana je konfiguracija statičkog hostinga u `app/.openai/hosting.json`.
 - Zapakirana je izgrađena aplikacija s podacima, dokumentima i vizualnim resursima.
@@ -229,7 +234,7 @@ node scripts/check-program-tree.ts
   podatkovni izvozi ostaju dostupni za detaljan pregled.
 - Funkcijske rashode, programske rashode i izdatke te kapitalne projekte treba
   uspoređivati uz njihov različit obuhvat, kako je označeno u aplikaciji.
-- Objava je privatna; javni pristup nije uključen.
+- Prethodna Sites objava bila je privatna; ovaj zapis ne potvrđuje postavke pristupa Netlify objavi.
 - Pregledničke provjere provedene su lokalno. Uspješna objava potvrđena je statusom
   servisa za hosting.
 
@@ -257,3 +262,14 @@ Naknadna dorada od 15. rujna 2026. pretvara naslovnicu u interaktivnu prezentaci
 **Glavne datoteke:** `app/src/pages/Naslovnica.tsx`, `app/src/components/AllocationChart.tsx`, `app/src/story.css`, `app/src/components/BudgetExplorer.tsx`, `app/src/components/BudgetExplorer.css`, `app/src/components/BarChart.tsx`.
 
 **Objava redizajna:** verzija 2 uspješno je privatno objavljena na postojećoj poveznici. Commit: `187ef93c0684f07bdb5c7e67f4961b350cb01add`.
+
+## 13. Korijen repozitorija, GitHub i Netlify — 16. rujna 2026.
+
+- Git korijen premješten je iz `app/` u `zupanija/`, uz očuvanje oba prethodna commita. Svih 69 prethodno praćenih datoteka aplikacije ostalo je nepromijenjeno.
+- Izvorni dokumenti i ovaj zapis uključeni su u repozitorij; lokalne postavke, ovisnosti i izlaz izgradnje ostaju ignorirani.
+- Grana `main` poslana je u `detinger/zupanija` i prati `origin/main`. Commit premještanja: `63bb640`.
+- Dodan je korijenski `netlify.toml`: izgradnja iz `app`, `npm run build`, objava `app/dist`, Node.js 22 i SPA pravilo za izravne rute. Commit konfiguracije: `fae34a1`.
+- Ažurirane su upute za pokretanje, prikazi aplikacije, opis podatkovnog pipelinea i opseg provjera; dodan je korijenski README.
+- Uklonjen je prazan korijenski `package-lock.json`; stvarni npm projekt i njegov lockfile ostaju u `app/`. Python virtualno okruženje `.venv/` dodano je u `.gitignore`.
+- Ponovljeni produkcijski build, lint i obje podatkovne provjere prolaze. Detalji su u [VALIDATION.md](app/VALIDATION.md).
+- Live Netlify URL i uspjeh ponovne objave još nisu potvrđeni; lokalni build nije potvrda rada javne stranice.

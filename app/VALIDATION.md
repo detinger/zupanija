@@ -12,6 +12,9 @@
 
 ## Ponovljive provjere
 
+Pokrenuti iz `app/`, nakon `npm ci`. Za izravno pokretanje `.ts` skripti
+koristiti aktualni Node.js 22 LTS, najmanje 22.18.
+
 ```sh
 npm run build
 npm run lint
@@ -45,3 +48,13 @@ pipelinea. Uparivanje je best-effort i dio stavki nema izravno upareno obrazlož
 - Pet poglavlja, odabir funkcije i prezentacijski način čuvaju se u URL-u. Vrsta detaljnog prikaza rashoda čuva se u parametru `prikaz`.
 - Lokalni poslužitelj vraća HTTP 200. Automatsko otvaranje pregleda nije bilo dostupno u ovom okruženju.
 - Pregledničke i vizualne provjere nisu ponavljane za ovaj redizajn; prethodni rezultati iznad odnose se na prethodnu verziju.
+
+## Repozitorij i Netlify — 16. rujna 2026.
+
+- Git korijen je `zupanija/`; aplikacija i dalje ostaje u `app/`.
+- Ponovljeni `npm run build`, `npm run lint` i obje podatkovne provjere prolaze (lokalni Node.js 26.8.2).
+- Provjereno 10 funkcija, tri mjere, zbrojevi potkategorija i 1.601 jedinstvena programska poveznica.
+- SHA-256 potvrđuje da tri dokumenta za preuzimanje odgovaraju izvornicima u korijenu. Sve javne datoteke odgovaraju kopijama u produkcijskom izlazu; relativne poveznice u Markdown dokumentima postoje, a ovisnosti u `package.json` i `package-lock.json` su usklađene.
+- Netlify konfiguracija u korijenu: `base = "app"`, `command = "npm run build"`, `publish = "dist"`, Node.js 22 i SPA preusmjeravanje na `/index.html` sa statusom 200.
+- Lokalna izgradnja ne potvrđuje uspjeh Netlify objave. Live URL i zapisnik ponovne objave nisu dostavljeni; otvaranje stranice i izravnih ruta na Netlifyju ostaju neprovjereni.
+- Pregledničke i vizualne provjere nisu ponavljane u ovom pregledu.
