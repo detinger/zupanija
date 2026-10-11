@@ -1,7 +1,7 @@
 # Pregled napravljenih izmjena
 
 **Projekt:** Interaktivni proračun Istarske županije za 2025. godinu  
-**Ažurirano:** 16. rujna 2026.
+**Ažurirano:** 11. listopada 2026.
 **Prethodna Sites objava:** [Proračun Istarske županije 2025.](https://istra-proracun-2025.darko-etinger.chatgpt.site)
 **Repozitorij:** [detinger/zupanija](https://github.com/detinger/zupanija)
 **Netlify:** konfiguracija poslana na GitHub; rezultat ponovne objave i live URL još nisu potvrđeni.
@@ -9,6 +9,8 @@
 Odjeljci 1–11 opisuju početnu doradu; odjeljak 12 naknadni prezentacijski
 redizajn koji zamjenjuje raniji opis naslovnice i proširuje prikaze rashoda.
 Aktualna struktura repozitorija i Netlify konfiguracija opisane su u odjeljku 13.
+Najnovija lokalna dorada dizajna i čišćenje opisani su u odjeljku 14;
+raniji odjeljci ostaju povijesni zapis.
 
 ## 1. Sažetak
 
@@ -170,7 +172,7 @@ Pregled programa prerađen je u postupno otvaranje hijerarhije:
 **Datoteke:** [useData.ts](app/src/lib/useData.ts),
 [ErrorBoundary.tsx](app/src/components/ErrorBoundary.tsx), [App.tsx](app/src/App.tsx),
 [NarrativePanel.tsx](app/src/components/NarrativePanel.tsx),
-[IcicleRow.tsx](app/src/components/IcicleRow.tsx), [README.md](app/README.md).
+[README.md](app/README.md). Tada korištena komponenta `IcicleRow.tsx` naknadno je uklonjena jer više nije bila u upotrebi.
 
 ## 9. Provedene provjere
 
@@ -273,3 +275,15 @@ Naknadna dorada od 15. rujna 2026. pretvara naslovnicu u interaktivnu prezentaci
 - Uklonjen je prazan korijenski `package-lock.json`; stvarni npm projekt i njegov lockfile ostaju u `app/`. Python virtualno okruženje `.venv/` dodano je u `.gitignore`.
 - Ponovljeni produkcijski build, lint i obje podatkovne provjere prolaze. Detalji su u [VALIDATION.md](app/VALIDATION.md).
 - Live Netlify URL i uspjeh ponovne objave još nisu potvrđeni; lokalni build nije potvrda rada javne stranice.
+
+
+## 14. Dizajn, animacije i čišćenje — 11. listopada 2026.
+
+- Naslovnica i okvir dobili su toplu svijetlu podlogu, tamne podatkovne panele i tipografiju DM Sans / Instrument Serif.
+- Dodani su animirani prijelaz 100 polja iz kruga u mrežu, promjene iznosa, naslova, traka i stupaca te kompaktni prezentacijski prikaz. Koriste se postojeći D3 i Framer Motion.
+- Usklađeni su termini „po ekonomskoj klasifikaciji”, „ukupan rezultat” i „Izvršenje je ostvarenje”.
+- Uklonjeno je nepotrebno preuzimanje programske hijerarhije na naslovnici.
+- Korijenski `package.json` prosljeđuje razvojne naredbe u `app/`, pa `npm run dev` radi i iz korijena. Ovisnosti i lockfile ostaju u `app/`.
+- Uklonjeni su nekorišteni `IcicleRow.tsx`, zastarjela interna bilješka `COORDINATION-RASHODI.md` te nekorištene ovisnosti `html2canvas` i `jspdf` s njihovim suvišnim tranzitivnim paketima. PNG izvoz koristi postojeći SVG/canvas kod.
+- Usklađeni su oba README-a, plan unapređenja i zapis provjera. Geografska karta isključena je iz plana prema uputi korisnika.
+- Izvorni dokumenti, podaci i povijesna konfiguracija hostinga zadržani su. Izmjene nisu objavljene na Netlifyju.

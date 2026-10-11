@@ -40,7 +40,7 @@ export async function downloadSvgAsPng(svgEl: SVGSVGElement, filename: string, s
   clone.setAttribute("height", String(height));
 
   const style = document.createElement("style");
-  style.textContent = "text { font-family: 'Source Sans 3', system-ui, sans-serif; }";
+  style.textContent = "text { font-family: 'DM Sans', system-ui, sans-serif; }";
   clone.insertBefore(style, clone.firstChild);
 
   const bg = document.createElementNS("http://www.w3.org/2000/svg", "rect");

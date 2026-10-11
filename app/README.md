@@ -6,7 +6,7 @@ odgovarajućim tekstom obrazloženja iz izvornog PDF-a.
 
 ## Pokretanje
 
-Naredbe pokrećite iz direktorija `app/` (iz korijena repozitorija prvo `cd app`).
+Sljedeće naredbe pokrećite iz direktorija `app/`.
 Koristite aktualni Node.js 22 LTS, najmanje 22.18 za TypeScript provjere.
 
 ```bash
@@ -14,6 +14,10 @@ npm ci
 npm run dev       # razvojni server, http://localhost:5173
 npm run build     # produkcijski build u dist/ (statični fileovi, deploy bilo gdje)
 ```
+
+Iz korijena repozitorija instalirajte ovisnosti s `npm --prefix app ci`.
+`npm run dev`, `npm run build`, `npm run lint` i `npm run preview` rade iz oba
+direktorija. Ovisnosti i njihov `package-lock.json` održavaju se u `app/`.
 
 ## Podatkovni pipeline
 
@@ -42,7 +46,8 @@ zasebno razrađeno obrazloženje pa za njih nema uparenog teksta.
 
 ## Stack
 
-Vite + React + TypeScript, Tailwind CSS v4, D3.js (karta udjela rashoda), responzivni grafovi plan/izvršenje i preglednik
+Vite + React + TypeScript, Tailwind CSS v4, D3.js (geometrija i boje grafova),
+Framer Motion (animacije), responzivni grafovi plan/izvršenje i preglednik
 programske hijerarhije, MiniSearch
 (client-side full-text pretraga), react-router (stanje odabira/drill-downa je u
 URL-u pa je svaki prikaz shareable linkom).
@@ -51,6 +56,15 @@ URL-u pa je svaki prikaz shareable linkom).
 
 Boje i logotip preuzeti sa službene stranice `istra-istria.hr` i iz grba Istarske
 županije (`public/brand/`) — vidi `src/index.css` (`--color-iz-*` tokeni).
+
+Naslovnica i zajednički okvir koriste toplu svijetlu podlogu, tamne grafičke panele
+i tipografiju DM Sans / Instrument Serif učitanu preko Google Fonts, uz zamjenske
+sistemske fontove. Zajednički stilovi nalaze se u `src/presentation.css`, a dorada
+okvira i priča naslovnice u `src/story.css`.
+
+Sto polja animirano prelazi iz kruga u mrežu. Broj polja po namjeni zaokružena je
+ilustracija; popis prikazuje preciznije udjele. Animacije poštuju sistemsku
+postavku smanjenog kretanja. Naslovnica ne učitava punu programsku hijerarhiju.
 
 ## Napomena
 

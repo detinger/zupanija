@@ -31,8 +31,8 @@
 
   --color-iz-red-500: #ea1d29;
 
-  --font-sans: "Source Sans 3", system-ui, "Segoe UI", Roboto, sans-serif;
-  --font-display: "Source Sans 3", system-ui, sans-serif;
+  --font-sans: "DM Sans", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-display: "DM Sans", system-ui, sans-serif;
 }
 
 @layer base {

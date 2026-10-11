@@ -9,17 +9,20 @@ Koristite aktualni Node.js 22 LTS (najmanje 22.18 za izravno pokretanje TypeScri
 Iz korijena repozitorija:
 
 ```sh
-cd app
-npm ci
+npm --prefix app ci
 npm run dev
 ```
 
-Produkcijska izgradnja: `npm run build` iz `app/`; rezultat je `app/dist/`.
+Instalacija ovisnosti potrebna je pri prvom pokretanju. Naredbe iz korijena
+prosljeđuju se aplikaciji u `app/`.
+
+Produkcijska izgradnja: `npm run build` iz korijena ili iz `app/`; rezultat je `app/dist/`.
 
 ## Dokumentacija i datoteke
 
 - [Dokumentacija aplikacije](app/README.md): prikazi, podaci i razvoj.
 - [Provjere](app/VALIDATION.md): rezultati i ograničenja provjere.
+- [Plan unapređenja](PLAN-UNAPREDENJA.md): provedena dizajnerska dorada i otvoreni prijedlozi.
 - [Povijest izmjena](change.md): razvoj, premještanje repozitorija i hosting.
 - Izvorni XLSX, DOC i PDF dokumenti nalaze se u korijenu; kopije za preuzimanje u `app/public/izvornici/`.
 - `app/public/data/` sadrži unaprijed generirane JSON podatke.

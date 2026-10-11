@@ -58,3 +58,21 @@ pipelinea. Uparivanje je best-effort i dio stavki nema izravno upareno obrazlož
 - Netlify konfiguracija u korijenu: `base = "app"`, `command = "npm run build"`, `publish = "dist"`, Node.js 22 i SPA preusmjeravanje na `/index.html` sa statusom 200.
 - Lokalna izgradnja ne potvrđuje uspjeh Netlify objave. Live URL i zapisnik ponovne objave nisu dostavljeni; otvaranje stranice i izravnih ruta na Netlifyju ostaju neprovjereni.
 - Pregledničke i vizualne provjere nisu ponavljane u ovom pregledu.
+
+## Dizajn i animacije — 11. listopada 2026.
+
+- Nova urednička naslovnica, DM Sans / Instrument Serif tipografija i usklađen okvir aplikacije.
+- Animirani prikaz koristi 100 stalnih polja s metodom najvećih ostataka. Prijelaz krug–mreža zadržava identitet polja; iznimno mali udjeli ostaju dostupni u tekstualnom popisu.
+- Dodane animacije naslova, aktivnog poglavlja, promjene iznosa, usporedbi i ulaganja. Nema automatskog izmjenjivanja poglavlja niti animacija u petlji. MotionConfig i nove komponente poštuju korisničku postavku smanjenog kretanja; emulacija te postavke nije posebno provedena.
+- Naslovnica više ne preuzima cijelu programsku hijerarhiju radi brojača.
+- Chrome: vizualno pregledani naslovnica, promjena krug–mreža, odabir zdravstva, plan i ostvarenje, ulaganja i ukupan rezultat. Provjeren mobilni prikaz širine 390 px, otvaranje izbornika i prelazak na rashode; također kompaktni prezentacijski prikaz na računalu.
+- U pregledanoj konzoli nije bilo prijavljenih grešaka aplikacije. Nisu provedeni potpuni pregled svih ruta ni zasebno mjerenje performansi.
+- Lint i postojeće podatkovne provjere prolaze. Provjera programske hijerarhije potvrđuje poveznice, ne sve zbrojeve: prethodno otkriveno odstupanje programa 2801 ostaje otvoreno i nije mijenjano ovom doradom.
+- Izmjene su lokalne; nova objava na Netlifyju nije provedena.
+
+## Dokumentacija i čišćenje — 11. listopada 2026.
+
+- Oba README-a opisuju pokretanje iz korijena i iz `app/`; ažurirani su povijest izmjena i status prijedloga u planu.
+- Nakon provjere upotrebe uklonjeni su `IcicleRow.tsx`, zastarjela koordinacijska bilješka te `html2canvas` i `jspdf`. Npm je uklonio ukupno 23 paketa; manifest i lockfile su usklađeni.
+- `npm run build` i `npm run lint` prolaze iz korijena repozitorija. Obje postojeće podatkovne provjere ponovno prolaze: 10 funkcija kroz tri mjere i 1.601 poveznica.
+- `git diff --check` prolazi. Pregled u pregledniku nije ponavljan za ovo čišćenje; ranije navedena ograničenja podatkovnih provjera ostaju.
